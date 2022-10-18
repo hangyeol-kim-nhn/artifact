@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    labels:
+        app: test
+    name: test-deployment
+    namespace: dev
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: test
+    template:
+        metadata:
+            labels:
+                app: test
+        spec:
+            containers:
+                -
+                    image: 'dd530b18-kr1-registry.container.nhncloud.com/khg_test/sample:latest'
+                    name: test
+                    ports:
+                        -
+                            containerPort: 8080
