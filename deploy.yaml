@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
     labels:
         app: test
-    name: test-deployment1
+    name: test-deployment
     namespace: dev
 spec:
     replicas: 1
