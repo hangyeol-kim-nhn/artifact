@@ -18,7 +18,7 @@ spec:
             containers:
                 -
                     image: 'dd530b18-kr1-registry.container.nhncloud.com/khg_test/sample:latest'
-                    name: test
+                    name: test1
                     ports:
                         -
                             containerPort: 8080
